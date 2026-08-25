@@ -2,7 +2,9 @@
 
 ## Démarrage local
 
-Node.js 22+ est requis. Lancez `npm run dev`, puis ouvrez `http://localhost:3000`.
+Node.js 22+ est requis. Sous Windows, double-cliquez sur `start-cubely.cmd`. Vous pouvez aussi lancer `npm run dev`, puis ouvrir `http://localhost:3000`.
+
+Ne double-cliquez pas sur `index.html` : une page ouverte avec une URL `file://` ne peut pas joindre l’API ni la base de données.
 
 La base SQLite persistante est créée dans `data/cubely.db` (ou à l’emplacement fourni dans `DATABASE_PATH`). Elle contient les utilisateurs, hashes de mots de passe scrypt, sessions révocables, compétitions, inscriptions et ordre des matchs.
 
